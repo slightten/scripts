@@ -2,6 +2,7 @@
 if game.PlaceId == 5827078246 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/Coins%20Hero%20Simulator", true))()
 
+--Blade Quest
 elseif game.PlaceId == 6494523288 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/Blade%20Quest", true))()
 end
