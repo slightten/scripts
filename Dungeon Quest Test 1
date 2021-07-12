@@ -1,0 +1,4 @@
+_G.Dungeon == "Desert Temple"
+_G.Difficulty == "Easy"
+_G.Hardcore == "False"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/funny", true))()
