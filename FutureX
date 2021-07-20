@@ -5,4 +5,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/mai
 --Blade Quest
 elseif game.PlaceId == 6494523288 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/Blade%20Quest", true))()
+
+--Super Power Fighting Simulator
+elseif game.PlaceId == 2619187362 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/scripts/main/Super%20Power%20Fighting%20Simulator", true))()
 end
