@@ -1,3 +1,0 @@
-if game.PlaceId == 7842028704 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/slightten/scripts/main/Anime%20Clash%20Simulator', true))() 
-end
