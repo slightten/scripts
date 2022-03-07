@@ -1,0 +1,71 @@
+_G.Color = Color3.fromRGB(66, 135, 245)
+_G.Color2 = Color3.fromRGB(66, 135, 245)
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slightten/ui-libs/main/funni"))()
+local window = library:CreateWindow("ouwHub", Enum.KeyCode.RightControl)
+local plr = game.Players.LocalPlayer
+local tab1 = window:CreateTab("Main")
+local tab2 = window:CreateTab("Misc")
+local sect2 = tab2:CreateSector("Misc", 'left')
+sect2:AddLabel("ouw#7809")
+
+local sect1 = tab1:CreateSector("Main", 'left')
+
+sect1:AddToggle("Auto Click", false, function(a)
+    aa = a
+    while aa do task.wait()
+game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click:InvokeServer()
+end
+end)
+
+for i,v in pairs(game:GetService("Workspace").Resources.Eggs:GetChildren()) do
+    if string.match(v.Name,"Robux") then
+        v:Remove()
+    end
+end
+
+local list = {}
+
+for i,v in next, game.Workspace.Resources.Eggs:GetChildren() do
+    table.insert(list,v.Name)
+end
+
+sect1:AddDropdown("Eggs (Not in order)",list,'Rare', false, function(egglist)
+getgenv().wa = egglist
+end)
+
+sect1:AddToggle("Auto Open Egg", false, function(b)
+  bb = b
+  while bb do task.wait()
+local args = {[1] = tostring(wa),[2] = 1}
+game:GetService("ReplicatedStorage").Packages.Knit.Services.EggService.RF.PurchaseEgg:InvokeServer(unpack(args))
+end
+end)
+    
+sect1:AddToggle("Equip Best",false,function(c)
+    cc = c
+    while cc do task.wait()
+game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.EquipBest:InvokeServer()
+end
+end)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
