@@ -49,6 +49,21 @@ game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.
 end
 end)
     
+sect1:AddLabel("Count The Rebirths")
+sect1:AddLabel("From Top To Bottom")
+sect1:AddLabel("Then Put The Number")
+sect1:AddLabel("In The Text Box")
+
+sect1:AddTextbox("Rebirth Amount", "1", function(ab)
+    getgenv().reb = ab
+end)
+
+sect1:AddToggle("Auto Rebirth",false,function(abc)
+    abcd = abc
+    while abcd do task.wait()
+game:GetService("ReplicatedStorage").Packages.Knit.Services.RebirthService.RF.Rebirth:InvokeServer(tonumber(reb))
+    end
+end)
     
     
     
