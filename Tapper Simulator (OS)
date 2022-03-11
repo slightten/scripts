@@ -26,7 +26,7 @@ end
 
 local list = {}
 
-for i,v in next, game.Workspace.Resources.Eggs:GetChildren() do
+for i,v in pairs(game.Workspace.Resources.Eggs:GetChildren()) do
     table.insert(list,v.Name)
 end
 
@@ -64,23 +64,3 @@ sect1:AddToggle("Auto Rebirth",false,function(abc)
 game:GetService("ReplicatedStorage").Packages.Knit.Services.RebirthService.RF.Rebirth:InvokeServer(tonumber(reb))
     end
 end)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
